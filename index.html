@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="heading">Registration Form</h1>          
+            
+            <div class="submited" id="success-btn">
+                <h1 class="head">Your Data Successfully Submited.</h1>
+                <button class="refresh">Refresh</button>
+            </div>
+                <form action="submit" class="submit-form" id="form">
+                    <div class="input-box">
+                        <span class="head-name">Full Name</span>
+                        <input type="text" placeholder="Enter your name" name="FullName" class="full-name" value="" required>
+                    </div>
+                     
+                    <div class="input-box">
+                        <span class="head-name">Email</span>
+                        <input type="email" placeholder="Enter your Email" name="Email" class="email" value="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="head-name">Mobile Number</span>
+                        <input type="Phone" placeholder="Enter your phone number" name="Phone" class="mobile" value="" required >
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="head-name">Branch</span>
+                        <input type="text" placeholder="Enter your Branch" name="Branch" class="branch" value="" required>
+                    </div>
+                     
+                    <div class="input-box">
+                        <span class="head-name">Domains</span>
+                        <input type="text" placeholder="Enter your Domains" name="Domains" class="domain" value="" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="head-name">DOB</span>
+                        <input type="text" placeholder="Enter your DOB" name="DOB" class="dob" value="" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="head-name">GitHub Link</span>
+                        <input type="text" placeholder="GitHub Profile Link" name="Git" class="git" value="" required>
+                    </div>                    
+                    
+
+                    <div class="input-box">
+                        <span class="head-name">LinkedIn Link</span>
+                        <input type="text" placeholder="LinkedIn Profile Link" name="LinkedIn" class="linkedin" value="" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="head-name">FaceBook Link</span>
+                        <input type="text" placeholder="FaceBook Profile Link" name="FaceBook" class="facebook" value="" required>
+                    </div>                   
+                                        
+                    <div class="input-box">
+                        <span class="head-name">Instagram Link</span>
+                        <input type="text" placeholder="Instagram Profile Link" name="Instagram"
+                        class="instagram" value=""
+                        required>
+                    </div>                                    
+                    
+                </form>
+                <div class="button">
+                    <button  class="btn" id="button">Submit</button>
+                </div>            
+                 
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

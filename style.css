@@ -1,0 +1,126 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+    
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://source.unsplash.com/random/1600x800") center no-repeat;
+}
+
+.container{
+    display: flex;
+    align-items: center;     
+    justify-content: center;    
+    width: 100%;    
+    height: 100vh;
+}
+
+.box{
+    width: 50vw;
+    height:  70vh;
+    border: 2px solid;
+    display: flex;
+    border: none;
+    flex-wrap: wrap;   
+    background: rgba(0, 0,0, 0.5);  
+    border-radius: 5px;
+}
+
+.heading {
+    width: 100%; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    color: white;     
+    background: rgba(0, 0,0, 0.53);  ;
+    height: 50px;
+}
+
+.input-box{    
+    display: flex;
+    flex-direction: column;        
+}
+
+
+.input-box input{    
+    border-radius: 5px;    
+    margin-bottom: 10px;
+}
+ 
+form {
+     display: flex;
+     height: 50vh;
+     justify-content: center;
+     flex-wrap: wrap;   
+     overflow:auto;  
+      
+}
+
+form::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.head-name{
+    color: white;
+    margin-bottom: 5px;
+}
+ 
+input{      
+    
+    padding: 5px;
+    margin-right: 10px;
+    font-size: medium;
+}
+ 
+
+.button{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button button{
+    display: block;
+    width: 85%;
+    padding: 5px;
+    font-size: 18px;
+    margin: auto;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(4,110,188,1) 54%, rgba(5,87,173,1) 100%, rgba(4,115,191,1) 100%);
+color: white;
+}
+
+
+.button button:hover{
+    display: block;
+    width: 85%;
+    padding: 5px;
+    font-size: 18px;
+    margin: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,87,173,1) 0%, rgba(4,110,188,1) 30%, rgba(0,212,255,1) 70%, rgba(4,115,191,1) 86%);
+}
+
+.submited {     
+    display: none;
+    flex-direction: column;    
+    text-align: center;  
+    width: 100%;
+    color: white;
+}
+
+.refresh{
+    width: 80%;    
+    border-radius: 5px;
+    margin-top: 20px;    
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(4,110,188,1) 54%, rgba(5,87,173,1) 100%, rgba(4,115,191,1) 100%);
+    color: white;
+}
+ 
+ 

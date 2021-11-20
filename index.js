@@ -2,6 +2,7 @@ let submit = document.querySelector(".btn"),
 name = document.querySelector(".full-name"),
 email = document.querySelector(".email"),
 mobile = document.querySelector(".mobile"),
+regd = document.querySelector(".regd"),
 branch = document.querySelector(".branch"),
 domain = document.querySelector(".domain"),
 dob = document.querySelector(".dob"),
@@ -9,6 +10,7 @@ git = document.querySelector(".git"),
 linkedin = document.querySelector(".linkedin"),
 facebook = document.querySelector(".facebook"),
 insta = document.querySelector(".instagram"),
+twitter = document.querySelector(".twitter"),
 form = document.getElementById("form"),
 success = document.querySelector("#success-btn"),
 refresh = document.querySelector(".refresh"),
@@ -16,9 +18,10 @@ button = document.getElementById("button")
 
 console.log(success.classList)
 var x=localStorage.getItem("Submit");
+console.log(name)
 
 const  validate = ()=>{
-    if(name.value=='' || email.value=='' || mobile.value=='' || branch.value=='' || domain.value=='' || dob.value=='' || git.value=='' || linkedin.value=='' || facebook.value=='' || insta.value==''){
+    if(name.value=='' || email.value=='' || mobile.value=='' || regd.value=='' || branch.value=='' || domain.value=='' || dob.value=='' || git.value=='' || linkedin.value=='' || facebook.value=='' || insta.value=='' || twitter.value==''){
         alert("All The Field Should be Filled.");
         return false;
     }else if(mobile.value.length!=10){
@@ -33,6 +36,7 @@ if (x==0){
     email.value = localStorage.getItem("Email"); 
     mobile.value = localStorage.getItem("Phone");
     branch.value = localStorage.getItem("Branch");
+    regd.value = localStorage.getItem("regd");
     domain.value = localStorage.getItem("Domain");
     dob.value = localStorage.getItem("DOB");
     git.value = localStorage.getItem("Git");
@@ -41,11 +45,12 @@ if (x==0){
     insta.value = localStorage.getItem("Instagram");
 }
  
-document.addEventListener('change',(e)=>{
+document.addEventListener('change',()=>{
     localStorage.setItem("FullName",name.value);
     localStorage.setItem("Email",email.value);
     localStorage.setItem("Phone",mobile.value);
     localStorage.setItem("Branch",branch.value);
+    localStorage.setItem("regd",regd.value);
     localStorage.setItem("Domain",domain.value);
     localStorage.setItem("DOB",dob.value);
     localStorage.setItem("Git",git.value);
